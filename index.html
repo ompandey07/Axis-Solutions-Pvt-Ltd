@@ -27,7 +27,19 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-  
+  <style>
+  #header .logo img.mainlogo {
+    max-height: none;
+    height: 120px;
+    width: 170px;
+}
+
+    #header .logo img {
+    padding: -134px;
+    margin: -69px;
+    max-height: 40px;
+}
+  </style>
 
 </head>
 
@@ -38,8 +50,8 @@
     <div class="container d-flex align-items-center justify-content-between">
 
       <div class="logo">
-        <h1><a href="index.html"></a>Axis Solutions</h1>
-        <span style="font-size: 12px;">Your Vision Our Support  A Perfect Partnership</span>
+        <a href="index.html"><img class="mainlogo" src="/axislogo.png" alt=""></a>
+        <!-- <span style="font-size: 12px;">Your Vision Our Support  A Perfect Partnership</span> -->
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html"><img src="assets/img/head.png" alt="" class="img-fluid"></a> -->
       </div>
