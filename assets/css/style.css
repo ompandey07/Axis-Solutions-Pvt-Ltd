@@ -691,6 +691,10 @@ section {
   transition: all 0.3s ease-in-out;
   border-radius: 8px;
   z-index: 1;
+  border-top-right-radius: 55px;
+  border-bottom-left-radius: 45px; ;
+  cursor: pointer;
+  
 }
 
 .services .icon-box::before {
@@ -725,6 +729,7 @@ section {
   height: 60px;
   background: #3498db;
   transition: all 0.3s ease-in-out;
+ border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
 }
 
 .services .icon i {
@@ -777,6 +782,8 @@ section {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  border-top-right-radius: 55px;
+  border-bottom-left-radius: 45px; ;
 }
 
 .more-services .card-body {
@@ -787,6 +794,9 @@ section {
   transition: 0.3s;
   transition: ease-in-out 0.4s;
   border-radius: 5px;
+  border-top-right-radius: 55px;
+  border-bottom-left-radius: 45px; ;
+  cursor: pointer;
 }
 
 .more-services .card-title {
