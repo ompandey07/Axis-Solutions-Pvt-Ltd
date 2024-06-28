@@ -1,337 +1,504 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Axis Solutions Pvt Ltd</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
 
-  <title>Axis Solutions Pvt Ltd</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+    <!-- Favicons -->
+    <link href="/title.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
-  <!-- Favicons -->
-  <link href="/title.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
 
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-  <style>
-  #header .logo img.mainlogo {
-    max-height: none;
-    height: 120px;
-    width: 170px;
-}
+    <style>
+      #ico{
+        font-size: 20px;
+      }
+      #header .logo img.mainlogo {
+        max-height: none;
+        height: 120px;
+        width: 170px;
+      }
+      #servdata {
+        display: inline-block;
+        width: 100%;
+        text-align: justify;
+        font-size: 14px; /* Reset font size */
+      }
 
-    #header .logo img {
-    padding: -134px;
-    margin: -69px;
-    max-height: 40px;
-    transition: transform 0.3s ease-in-out; /* Add a smooth transition effect for transform */
+      #header .logo img {
+        padding: -134px;
+        margin: -69px;
+        max-height: 40px;
+        transition: transform 0.3s ease-in-out; /* Add a smooth transition effect for transform */
+      }
 
-}
+      #header .logo img:hover {
+        transform: scale(
+          1.1
+        ); /* Adjust the scale factor for zoom effect on hover */
+      }
+      @keyframes floatDown {
+        0% {
+          transform: translateY(-100%);
+        }
+        100% {
+          transform: translateY(100%);
+        }
+      }
 
-#header .logo img:hover {
-    transform: scale(1.1); /* Adjust the scale factor for zoom effect on hover */
-}
-  </style>
+      .animated-image {
+        max-width: 40px;
+        margin-left: 200px;
+        animation: floatDown 1.5s infinite; /* Adjust duration for faster speed */
+      }
+      /* Add this CSS to your stylesheet */
 
-</head>
+      .floating {
+        animation: float 3s ease-in-out infinite;
+      }
 
-<body>
+      @keyframes float {
+        0% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-10px);
+        }
+        100% {
+          transform: translateY(0);
+        }
+      }
+    </style>
+  </head>
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top d-flex align-items-center">
-    <div class="container d-flex align-items-center justify-content-between">
-
-      <div class="logo">
-        <a href="index.html"><img class="mainlogo" src="/axislogo.png" alt=""></a>
-        <!-- <span style="font-size: 12px;">Your Vision Our Support  A Perfect Partnership</span> -->
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="index.html"><img src="assets/img/head.png" alt="" class="img-fluid"></a> -->
-      </div>
-
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#services">Services</a></li>
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-
-    </div>
-  </header><!-- End Header -->
-
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex align-items-center">
-
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
-          <h1 data-aos="fade-up">Grow your business with Axis Solutions</h1>
-          <h2 data-aos="fade-up" data-aos-delay="400" style="font-size: 13px;">"Unlocking Potential, Unleashing Innovation: Your Digital Future Begins Here."</h2>
-          <div data-aos="fade-up" data-aos-delay="800">
-            <a href="#about" class="btn-get-started scrollto">Get Started</a>
-          </div>
+  <body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top d-flex align-items-center">
+      <div class="container d-flex align-items-center justify-content-between">
+        <div class="logo">
+          <a href="index.html"
+            ><img class="mainlogo" src="/axislogo.png" alt=""
+          /></a>
         </div>
-        <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="fade-left" data-aos-delay="200">
-          <img src="assets/img/hero-img.png" class="img-fluid animated" alt="">
-        </div>
+
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li><a class="nav-link scrollto active" href="#hero"><i class="ri-home-3-line" id="ico" ></i>&nbsp;  Home</a></li>
+            <li><a class="nav-link scrollto" href="#about"><i class="ri-error-warning-fill" id="ico" ></i>&nbsp; About</a></li>
+            <li><a class="nav-link scrollto" href="#services"><i class="ri-rfid-line" id="ico" ></i>&nbsp;  Services</a></li>
+            <li><a class="nav-link scrollto" href="#contact"><i class="ri-phone-fill" id="ico" ></i>&nbsp; Contact</a></li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
       </div>
-    </div>
+    </header>
 
-  </section><!-- End Hero -->
-
-  <main id="main">
-
-    <!-- ======= About Us Section ======= -->
-    <section id="about" class="about">
+    <!-- ======= Hero Section ======= -->
+    <section id="hero" class="d-flex align-items-center">
       <div class="container">
-
-        <div class="section-title" data-aos="fade-up">
-          <h2>About Us</h2>
-        </div>
-
-        <div class="row content">
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="150">
-            <p>
-              At Axis Solutions, we are a team of dedicated professionals with a passion for technology and innovation. With years of experience in the software industry, we have established ourselves as a reliable and trusted partner for businesses looking to streamline their operations and enhance their digital presence.
-            </p>
-        
-          </div>
-          <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-up" data-aos-delay="300">
-            <p>
-              Our mission is to empower businesses with software solutions that drive efficiency, enhance productivity, and enable growth for our clients. We believe in staying ahead of the curve, adapting to the latest technological advancements, and delivering solutions that make a real impact.
-            </p>
-            <a href="#" class="btn-learn-more">Learn More</a>
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End About Us Section -->
-
-    <!-- ======= Counts Section ======= -->
-    
-    <!-- ======= Services Section ======= -->
-    <section id="services" class="services">
-      <div class="container">
-
-        <div class="section-title" data-aos="fade-up">
-          <h2>Services</h2>
-          <p>"Empowering Possibilities, Delivering Excellence: Your Vision, Our Commitment."</p>
-        </div>
-
         <div class="row">
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
-              <div class="icon"><i class="bx bxl-dribbble"></i></div>
-              <h4 class="title"><a href="">ERP SOLUTIONS</a></h4>
-              <p class="description">Our ERP (Enterprise Resource Planning) solution is designed to centralize and 
-                streamline your business processes. </p>
+          <div
+            class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center"
+          >
+            <h1 data-aos="fade-up">Grow your business with Axis Solutions</h1>
+            <h2
+              id="servdata"
+              data-aos="fade-up"
+              data-aos-delay="400"
+              style="font-size: 13px; margin-top: 30px"
+            >
+              Axis Solutions offers comprehensive business services designed to
+              help your company thrive. With innovative strategies, cutting-edge
+              technology, and expert support, we empower you to streamline
+              operations, enhance customer engagement, and drive growth. Partner
+              with Axis Solutions to take your business to the next level.
+            </h2>
+            <div data-aos="fade-up" data-aos-delay="800">
+              <img src="move.png" class="animated-image" alt="" />
             </div>
           </div>
-
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-            <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
-              <div class="icon"><i class="bx bx-book"></i></div>
-              <h4 class="title"><a href="">ACCOUNTING SOLUTIONS</a></h4>
-              <p class="description">Simplify your financial management with our robust accounting solution. Form bookkeeping to financial reporting</p>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-            <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
-              <div class="icon"><i class="bx bx-calculator"></i></div>
-              <h4 class="title"><a href="">BILLING</a></h4>
-              <p class="description">In this competitive landscape, a successful billing business must offer streamlined and user-friendly systems that enable clients to manage their billing cycles effortlessly. </p>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-            <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
-              <div class="icon"><i class="bx bx-world"></i></div>
-              <h4 class="title"><a href="">Web Development</a></h4>
-              <p class="description">We bring a wealth of expertise to craft bespoke websites that not only meet but exceed your expectations. </p>
-            </div>
+          <div
+            class="col-lg-6 order-1 order-lg-2 hero-img"
+            data-aos="fade-left"
+            data-aos-delay="200"
+          >
+            <img
+              src="assets/img/hero-img.png"
+              class="img-fluid animated"
+              alt=""
+            />
           </div>
         </div>
-
       </div>
-    </section><!-- End Services Section -->
+    </section>
+    <!-- End Hero -->
 
-    <!-- ======= More Services Section ======= -->
-    <section id="more-services" class="more-services">
-      <div class="container">
-
-        <div class="row">
-          <div class="col-md-6 d-flex align-items-stretch">
-            <div class="card" style='background-image: url("assets/img/ERP-system.jpg");' data-aos="fade-up" data-aos-delay="100">
-              <div class="card-body">
-                <h5 class="card-title"><a href="">ERP Solutions</a></h5>
-                <p class="card-text">Our ERP (Enterprise Resource Planning) solution is designed to centralize and streamlize your business processes. Whether You're small startup
-                  or a large enterprise, our ERp system helps you manageyour resources, automate workflows, and optimize efficiency. Say goodbye to data silos and hello to real-time inshights that empower smarter decision-making</p>
-                <!-- <div class="read-more"><a href="#"><i class="bi bi-arrow-right"></i> Read More</a></div> -->
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
-            <div class="card" style='background-image: url("assets/img/account.jpg");' data-aos="fade-up" data-aos-delay="200">
-              <div class="card-body">
-                <h5 class="card-title"><a href="">Accounting Solutions</a></h5>
-                <p class="card-text">Simplify your financial management with our robust accounting solution. from bookkeeping to financial reporting, our software ensures accuracy, compliance, and transparency. Stay on top of your finances effortlessly and focus on what truly matters - growing your business.</p>
-                <!-- <div class="read-more"><a href="#"><i class="bi bi-arrow-right"></i> Read More</a></div> -->
-              </div>
-            </div>
-
-          </div>
-          <div class="col-md-6 d-flex align-items-stretch mt-4">
-            <div class="card" style='background-image: url("assets/img/Easybilllll.jpg");' data-aos="fade-up" data-aos-delay="100">
-              <div class="card-body">
-                <h5 class="card-title"><a href="">Billing</a></h5>
-                <p class="card-text">Experience the future of efficient billing with our streamlined solution! At Axis Solutions Pvt Ltd, we understand the importance of maintaining a healthy cash flow for your business. Our billing solution not only ensures timely payments but also enhances the overall customer experience.With customizable invoicing, you have the flexibility to tailor invoices to suit your brand and specific client needs</p>
-                <!-- <div class="read-more"><a href="#"><i class="bi bi-arrow-right"></i> Read More</a></div> -->
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 d-flex align-items-stretch mt-4">
-            <div class="card" style='background-image: url("assets/img/webdev.jpg");' data-aos="fade-up" data-aos-delay="200">
-              <div class="card-body">
-                <h5 class="card-title"><a href="">Web Devlopment</a></h5>
-                <p class="card-text">Elevate your online presence with Work For Web Development! We specialize in crafting sleek and powerful websites tailored to your unique vision. Whether you're a startup or an established business, our team of expert developers is dedicated to turning your ideas into impressive digital realities. We blend cutting-edge design with seamless functionality, creating user-friendly websites that leave a lasting impact. </p>
-                <!-- <div class="read-more"><a href="#"><i class="bi bi-arrow-right"></i> Read More</a></div> -->
-              </div>
-            </div>
+    <main id="main">
+      <section id="about" class="about">
+        <div class="container">
+          <div class="section-title" data-aos="fade-up">
+            <h2>About Us</h2>
           </div>
 
-          <div class="col-md-6 d-flex align-items-stretch mt-4">
-            <div class="card" style='background-image: url("assets/img/portfolio/eco.png");' data-aos="fade-up" data-aos-delay="100">
-              <div class="card-body">
-                <h5 class="card-title"><a href="">e-Commerce</a></h5>
-                <p class="card-text">Take your business online with our e-commerce solutions. Whether you're a retailer or a service provider. we create immersive online shopping experiences for your customers. Our e-commerce plartforms are user-friendly,sercure,and optimized for both desktop and mobile devices.
+          <div class="row content">
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="150">
+              <p id="servdata">
+                At Axis Solutions, we are a team of dedicated professionals with
+                a passion for technology and innovation. With years of
+                experience in the software industry, we have established
+                ourselves as a reliable and trusted partner for businesses
+                looking to streamline their operations and enhance their digital
+                presence.
+              </p>
+            </div>
+            <div
+              class="col-lg-6 pt-4 pt-lg-0"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <p id="servdata">
+                Our mission is to empower businesses with software solutions
+                that drive efficiency, enhance productivity, and enable growth
+                for our clients. We believe in staying ahead of the curve,
+                adapting to the latest technological advancements, and
+                delivering solutions that make a real impact.
+              </p>
+            </div>
+          </div>
+          <hr />
+        </div>
+      </section>
+      <!-- End About Us Section -->
+
+      <!-- ======= Services Section ======= -->
+      <section id="services" class="services">
+        <div class="container">
+          <div class="section-title" data-aos="fade-up">
+            <h2>Services</h2>
+            <p id="servdata">
+              "Empowering Possibilities, Delivering Excellence: Your Vision, Our
+              Commitment."
+            </p>
+          </div>
+
+          <div class="row">
+            <div
+              class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0"
+            >
+              <div
+                class="icon-box floating"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
+                <div class="icon"><i class="bx bxl-dribbble"></i></div>
+                <h4 class="title"><a href="">ERP SOLUTIONS</a></h4>
+                <p id="servdata" class="description">
+                  Our ERP (Enterprise Resource Planning) solution is designed to
+                  centralize and streamline your business processes.
                 </p>
-                <!-- <div class="read-more"><a href="#"><i class="bi bi-arrow-right"></i> Read More</a></div> -->
+              </div>
+            </div>
+
+            <div
+              class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0"
+            >
+              <div
+                class="icon-box floating"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
+                <div class="icon"><i class="bx bx-book"></i></div>
+                <h4  class="title"><a style="white-space: nowrap ;" href="" >ACCOUNTING SOLUTIONS</a></h4>
+                <p id="servdata" class="description">
+                  Simplify your financial management with our robust accounting
+                  solution. From bookkeeping to financial reporting.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0"
+            >
+              <div
+                class="icon-box floating"
+                data-aos="fade-up"
+                data-aos-delay="300"
+              >
+                <div class="icon"><i class="bx bx-calculator"></i></div>
+                <h4 class="title"><a href="">BILLING</a></h4>
+                <p id="servdata" class="description">
+                  In this competitive landscape, a successful billing business
+                  must offer streamlined and user-friendly systems that enable
+                  clients to manage their billing cycles effortlessly.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0"
+            >
+              <div
+                class="icon-box floating"
+                data-aos="fade-up"
+                data-aos-delay="400"
+              >
+                <div class="icon"><i class="bx bx-world"></i></div>
+                <h4 class="title"><a href="">Web Development</a></h4>
+                <p id="servdata" class="description">
+                  We bring a wealth of expertise to craft bespoke websites that
+                  not only meet but exceed your expectations.
+                </p>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section><!-- End More Services Section -->
+      </section>
 
-    
-    
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
+      <!-- End Services Section -->
+
+      <!-- ======= More Services Section ======= -->
+      <section id="more-services" class="more-services">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 d-flex align-items-stretch">
+              <div
+                class="card"
+                style="background-image: url('assets/img/ERP-system.jpg')"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
+                <div class="card-body">
+                  <h5 class="card-title"><a href="">ERP Solutions</a></h5>
+                  <p id="servdata" class="card-text">
+                    Our ERP (Enterprise Resource Planning) solution is designed
+                    to centralize and streamlize your business processes.
+                    Whether You're small startup or a large enterprise, our ERp
+                    system helps you manageyour resources, automate workflows,
+                    and optimize efficiency. Say goodbye to data silos and hello
+                    to real-time inshights that empower smarter decision-making
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+              <div
+                class="card"
+                style="background-image: url('assets/img/account.jpg')"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
+                <div class="card-body">
+                  <h5 class="card-title">
+                    <a href="">Accounting Solutions</a>
+                  </h5>
+                  <p id="servdata" class="card-text">
+                    Simplify your financial management with our robust
+                    accounting solution. from bookkeeping to financial
+                    reporting, our software ensures accuracy, compliance, and
+                    transparency. Stay on top of your finances effortlessly and
+                    focus on what truly matters - growing your business.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 d-flex align-items-stretch mt-4">
+              <div
+                class="card"
+                style="background-image: url('assets/img/Easybilllll.jpg')"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
+                <div class="card-body">
+                  <h5 class="card-title"><a href="">Billing</a></h5>
+                  <p id="servdata" class="card-text">
+                    Experience the future of efficient billing with our
+                    streamlined solution! At Axis Solutions Pvt Ltd, we
+                    understand the importance of maintaining a healthy cash flow
+                    for your business. Our billing solution not only ensures
+                    timely payments but also enhances the overall customer
+                    experience.With customizable invoicing, you have the
+                    flexibility to tailor invoices to suit your brand and
+                    specific client needs
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 d-flex align-items-stretch mt-4">
+              <div
+                class="card"
+                style="background-image: url('assets/img/webdev.jpg')"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
+                <div class="card-body">
+                  <h5 class="card-title"><a href="">Web Devlopment</a></h5>
+                  <p id="servdata" class="card-text">
+                    Elevate your online presence with Work For Web Development!
+                    We specialize in crafting sleek and powerful websites
+                    tailored to your unique vision. Whether you're a startup or
+                    an established business, our team of expert developers is
+                    dedicated to turning your ideas into impressive digital
+                    realities. We blend cutting-edge design with seamless
+                    functionality, creating user-friendly websites that leave a
+                    lasting impact.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 d-flex align-items-stretch mt-4">
+              <div
+                class="card"
+                style="background-image: url('assets/img/portfolio/eco.png')"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
+                <div class="card-body">
+                  <h5 class="card-title"><a href="">e-Commerce</a></h5>
+                  <p id="servdata" class="card-text">
+                    Take your business online with our e-commerce solutions.
+                    Whether you're a retailer or a service provider. we create
+                    immersive online shopping experiences for your customers.
+                    Our e-commerce plartforms are user-friendly,sercure,and
+                    optimized for both desktop and mobile devices.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End More Services Section -->
+
+      <!-- ======= Contact Section ======= -->
+      <section id="contact" class="contact">
+        <div class="container">
+          <div class="section-title" data-aos="fade-up">
+            <h2>Contact Us</h2>
+          </div>
+
+          <div class="row">
+            <div
+              class="col-lg-4 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div class="contact-about">
+                <h3>Axis Solutions</h3>
+                <p>Our Social Sites</p>
+                <div class="social-links">
+                  <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+                  <a href="#" class="facebook"
+                    ><i class="bi bi-facebook"></i
+                  ></a>
+                  <a href="#" class="instagram"
+                    ><i class="bi bi-instagram"></i
+                  ></a>
+                  <a href="#" class="linkedin"
+                    ><i class="bi bi-linkedin"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-3 col-md-6 mt-4 mt-md-0"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="info">
+                <div style="white-space: nowrap">
+                  <i class="ri-map-pin-line"></i>
+                  <p>Lokanthali - 1 Mahdyapur Thimi Municipality</p>
+                </div>
+
+                <div>
+                  <i class="ri-mail-send-line"></i>
+                  <p>info@axissolutions.com.np</p>
+                </div>
+
+                <div>
+                  <i class="ri-phone-line"></i>
+                  <p>977-1-6632356</p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-lg-5 col-md-12 mt-4 mt-lg-0"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <img src="work.gif" style="max-width: 100%" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
       <div class="container">
-
-        <div class="section-title" data-aos="fade-up">
-          <h2>Contact Us</h2>
-        </div>
-
-        <div class="row">
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="contact-about">
-              <h3>Axis Solutions</h3>
-              <p>Our Social Sites</p>
-              <div class="social-links">
-                <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-                <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-                <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-                <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-              </div>
+        <div class="row d-flex align-items-center">
+          <h6 style="font-size: 10px">
+            Designed By :
+            <a href="https://www.omkumarpandey.com.np/" target="_blank"
+              >Om Pandey</a
+            >
+          </h6>
+          <!-- End Footer -->
+          <div class="col-lg-6 text-lg-left text-center">
+            <div class="copyright" style="margin-left: 25%">
+              &copy; Copyright <strong>Axis Solutions Pvt Ltd</strong>. All
+              Rights Reserved
             </div>
           </div>
-
-          <div class="col-lg-3 col-md-6 mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="200">
-            <div class="info">
-              <div>
-                <i class="ri-map-pin-line"></i>
-                <p>Lokanthali - 1<br>Mahdyapur Thimi Municipality  </p>
-              </div>
-
-              <div>
-                <i class="ri-mail-send-line"></i>
-                <p>info@axissolutions.com.np</p>
-              </div>
-
-              <div>
-                <i class="ri-phone-line"></i>
-                <p>977-1-6632356</p>
-              </div>
-             
-
-            </div>
-          </div>
-
-          <!-- <div class="col-lg-5 col-md-12" data-aos="fade-up" data-aos-delay="300">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.174441256676!2d85.32167827465778!3d27.711899825292118!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1900d39c7265%3A0xef1f78f14ae7d688!2sPioneer%20Software%20Solutions%20Pvt.%20Ltd.!5e0!3m2!1sen!2snp!4v1702567162658!5m2!1sen!2snp" width="550" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </div> -->
-
         </div>
-
       </div>
-    </section><!-- End Contact Section -->
+    </footer>
 
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="container">
-      <div class="row d-flex align-items-center">
-        <h6 style="font-size: 10px;">Designed By : <a href="https://www.omkumarpandey.com.np/" target="_blank">Om Pandey</a></h6><!-- End Footer -->
-        <div class="col-lg-6 text-lg-left text-center">
-          <div class="copyright" style="margin-left: 25%;">
-            &copy; Copyright <strong>Axis Solutions Pvt Ltd</strong>. All Rights Reserved
-          </div>          
-        </div>
-        
-      </div>
-    </div>
-  </footer>
-<!-- arrow for scroll  -->
-  <!-- <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a> -->
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-
-<!-- Chatra {literal}  If needs then i applyied--> 
-<!-- <script>
-  (function(d, w, c) {
-      w.ChatraID = 'CaW7bMqhE4x5A4rRY';
-      var s = d.createElement('script');
-      w[c] = w[c] || function() {
-          (w[c].q = w[c].q || []).push(arguments);
-      };
-      s.async = true;
-      s.src = 'https://call.chatra.io/chatra.js';
-      if (d.head) d.head.appendChild(s);
-  })(document, window, 'Chatra');
-</script> -->
-<!-- /Chatra {/literal} -->
-  
-
-</body>
-
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
